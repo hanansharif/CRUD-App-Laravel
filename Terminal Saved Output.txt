@@ -1,0 +1,293 @@
+Last login: Mon Apr  1 08:51:44 on ttys000
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % cd C
+cd: no such file or directory: C
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git branch
+* main
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % gti checkout -b feature1
+zsh: command not found: gti
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git checkout -b feature1
+Switched to a new branch 'feature1'
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git branch
+* feature1
+  main
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisian make:Controller UserController
+Could not open input file: artisian
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan make:Controller UserController 
+
+   INFO  Controller [app/Http/Controllers/UserController.php] created successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan env:load
+
+
+   ERROR  Command "env:load" is not defined. Did you mean one of these?  
+
+  ⇂ env  
+  ⇂ env:decrypt  
+  ⇂ env:encrypt  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan migrate
+
+   INFO  Preparing database.  
+
+  Creating migration table ...................................... 24.87ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table ......................... 124.94ms DONE
+  0001_01_01_000001_create_cache_table .......................... 43.60ms DONE
+  0001_01_01_000002_create_jobs_table .......................... 114.26ms DONE
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   resources/views/home.blade.php
+	modified:   routes/web.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app/Http/Controllers/UserController.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % gti add .
+zsh: command not found: gti
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git commit -m "registration"
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   resources/views/home.blade.php
+	modified:   routes/web.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app/Http/Controllers/UserController.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git add .
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git commit -m "registration"
+[feature1 141ff0b] registration
+ 3 files changed, 41 insertions(+), 11 deletions(-)
+ create mode 100644 app/Http/Controllers/UserController.php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git push origin feature1
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 1.35 KiB | 1.35 MiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'feature1' on GitHub by visiting:
+remote:      https://github.com/hanansharif/CRUD-App-Laravel/pull/new/feature1
+remote: 
+To https://github.com/hanansharif/CRUD-App-Laravel.git
+ * [new branch]      feature1 -> feature1
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 900 bytes | 450.00 KiB/s, done.
+From https://github.com/hanansharif/CRUD-App-Laravel
+ * branch            main       -> FETCH_HEAD
+   627a254..c4d5561  main       -> origin/main
+Updating 627a254..c4d5561
+Fast-forward
+ app/Http/Controllers/UserController.php | 22 ++++++++++++++++++++++
+ resources/views/home.blade.php          | 25 +++++++++++++++++--------
+ routes/web.php                          |  5 ++---
+ 3 files changed, 41 insertions(+), 11 deletions(-)
+ create mode 100644 app/Http/Controllers/UserController.php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git pull origin main
+From https://github.com/hanansharif/CRUD-App-Laravel
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git checkout feature1
+Switched to branch 'feature1'
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % [200~php artisan cache:clear
+zsh: bad pattern: [200~php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % ~php artisan cache:clear
+
+zsh: no such user or named directory: php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan serve
+
+   WARN  Failed to listen on 127.0.0.1:8000 (reason: Address already in use).  
+
+   INFO  Server running on [http://127.0.0.1:8001].  
+
+  Press Ctrl+C to stop the server
+
+^C%                                                                             (base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan cache-clear
+
+                                         
+  Command "cache-clear" is not defined.  
+                                         
+
+ Do you want to run "cache:clear" instead?  (yes/no) [no]:
+ > yes
+
+
+   INFO  Application cache cleared successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan make:migration create_posts_table
+
+   INFO  Migration [database/migrations/2024_04_01_083538_create_posts_table.php] created successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan migrate
+
+   INFO  Running migrations.  
+
+  2024_04_01_083538_create_posts_table .......................... 78.88ms DONE
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan make:controller PostController
+
+   INFO  Controller [app/Http/Controllers/PostController.php] created successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   app/Http/Controllers/UserController.php
+	modified:   resources/views/home.blade.php
+	modified:   routes/web.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app/Http/Controllers/PostController.php
+	database/migrations/2024_04_01_083538_create_posts_table.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git add .
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git commit -m "authentication and post form"
+[feature1 2de7f44] authentication and post form
+ 5 files changed, 147 insertions(+), 28 deletions(-)
+ create mode 100644 app/Http/Controllers/PostController.php
+ create mode 100644 database/migrations/2024_04_01_083538_create_posts_table.php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git push origin feature1
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 3.08 KiB | 3.08 MiB/s, done.
+Total 15 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/hanansharif/CRUD-App-Laravel.git
+   141ff0b..2de7f44  feature1 -> feature1
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git oull origin main
+git: 'oull' is not a git command. See 'git --help'.
+
+The most similar command is
+	pull
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git pull origin main 
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 907 bytes | 453.00 KiB/s, done.
+From https://github.com/hanansharif/CRUD-App-Laravel
+ * branch            main       -> FETCH_HEAD
+   c4d5561..83f1e09  main       -> origin/main
+Updating c4d5561..83f1e09
+Fast-forward
+ app/Http/Controllers/PostController.php            |  10 ++
+ app/Http/Controllers/UserController.php            |  27 +++++-
+ .../2024_04_01_083538_create_posts_table.php       |  30 ++++++
+ resources/views/home.blade.php                     | 104 ++++++++++++++++-----
+ routes/web.php                                     |   4 +-
+ 5 files changed, 147 insertions(+), 28 deletions(-)
+ create mode 100644 app/Http/Controllers/PostController.php
+ create mode 100644 database/migrations/2024_04_01_083538_create_posts_table.php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git pull origin main
+From https://github.com/hanansharif/CRUD-App-Laravel
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git checkout feature1
+Switched to branch 'feature1'
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % gut branch
+zsh: command not found: gut
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git branch
+* feature1
+  main
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+nothing to commit, working tree clean
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artissan make:model Post
+Could not open input file: artissan
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan make:model Post 
+
+   INFO  Model [app/Models/Post.php] created successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % php artisan cache:clear
+
+   INFO  Application cache cleared successfully.  
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   app/Http/Controllers/PostController.php
+	modified:   app/Models/User.php
+	modified:   resources/views/home.blade.php
+	modified:   routes/web.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	app/Models/Post.php
+	resources/views/edit-post.blade.php
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git add .
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git status
+On branch feature1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   app/Http/Controllers/PostController.php
+	new file:   app/Models/Post.php
+	modified:   app/Models/User.php
+	new file:   resources/views/edit-post.blade.php
+	modified:   resources/views/home.blade.php
+	modified:   routes/web.php
+
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git commit -m "Final Commit"
+[feature1 2817ff0] Final Commit
+ 6 files changed, 167 insertions(+), 16 deletions(-)
+ create mode 100644 app/Models/Post.php
+ create mode 100644 resources/views/edit-post.blade.php
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % git push origin feature1
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 3.64 KiB | 3.64 MiB/s, done.
+Total 15 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/hanansharif/CRUD-App-Laravel.git
+   2de7f44..2817ff0  feature1 -> feature1
+(base) abdulhanansharif@Abduls-MBP CRUD App Laravel % 
